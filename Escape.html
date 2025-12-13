@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE</title>
+ </head>
+<style>
+     body{
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+        color:darkred;
+        font-family: 'Courier New', monospace;
+        text-align: center;
+    }
+    header{
+        color: red;
+        text-align: center;
+        padding: 50px 20px;
+        margin: 0;
+        font-family: 'Courier', 'monospace';
+        font-size: 4em;
+        text-shadow:0 0 5px red, 0 0 10px darkred;
+    }
+    nav a{
+        color: darkred;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 0 15px;
+        text-shadow: 0 0 5px red ;
+    }
+    nav a:hover{
+        color: white;
+
+    }
+    .escape-button{
+        display: inline-block;
+        width: 320px;
+        height: 110px;
+        background:linear-gradient(180deg,#7a0000,#3a0000);
+        color:#ffff;
+        line-height: 100px;
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 5px;
+        transition: all 0.3 ease;
+        border-radius: 6px;
+        animation: pulse 3s infinite;
+        
+    }
+    .escape-button:hover {
+  background: #000;
+
+  color: #950c0c;
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.9),
+    0 0 45px rgba(255, 0, 0, 0.7),
+    inset 0 0 30px rgba(253, 2, 2, 0.4);
+
+  text-shadow:
+    0 0 20px rgba(255, 0, 0, 1);
+
+  transform: scale(1.05);
+}
+    .center {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .escape-button:hover{
+        box-shadow: 0 0 20px rgba(255, 0, 0, .9), 0 0 45px rgba(255, 0, 0, 0.7);
+
+    }
+    @keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 10px rgba(255, 0, 0, 0.4),
+      0 0 20px rgba(255, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 18px rgba(255, 0, 0, 0.8),
+      0 0 40px rgba(255, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(255, 0, 0, 0.4),
+      0 0 20px rgba(255, 0, 0, 0.3);
+  }
+}
+</style>
+<body>
+    <header>They all try...</header>
+    <nav>
+        <a href="Journal.html">Journal</a>
+        <a href="Photos.html">Photos</a>
+    </nav>
+    <div class="center"> <a href="index.html" class="escape-button">ESCAPE 
+    </a></div>
+</body>
+</html>

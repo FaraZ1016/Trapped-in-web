@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    header{
+        color: red;
+        text-align: center;
+        padding: 50px 20px;
+        margin: 0;
+        animation: flicker 1.5s infinite;
+        font-family: 'Courier', 'monospace';
+        font-size: 4em;
+        text-shadow:0 0 5px red, 0 0 10px darkred;
+    }
+    @keyframes flicker{
+        0%,19%,21%,23%,25%,54%,56%,100%
+        {opacity: 1;}
+        20%,24%,55% 
+        {opacity: 0.4;}
+    }
+    body{
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+        color:darkred;
+        font-family: 'Courier New', monospace;
+        text-align: center;
+    }
+    nav a{
+        color: darkred;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 0 15px;
+        text-shadow: 0 0 5px red ;
+    }
+    footer{
+        text-align: center;
+        font-size: 0.4em;
+        color: grey;
+    }
+    nav a:hover{
+        color: white;
+
+    }
+    h1{
+        padding: 10 5;
+        margin: 50px ;
+        text-emphasis-color: red;
+        animation: reveal 1.8s ease forwards;
+        text-shadow: 0 0 20px rgb(11, 8, 8);
+    }
+    @keyframes reveal {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+</style>
+<body>
+    <header>Trapped in Web</header>
+    <nav>
+        <a href="Journal.html">Journal</a>
+        <a href="Photos.html">Photos</a>
+        <a href="Escape.html">Escape</a>
+    </nav>
+    <h1>How did you get here? You shouldn't be here.<br>I tried to leave but i couldn't.<br>I call this place home now...</h1>
+    <footer><h2>&copy;2025-trapped in web</h2></footer>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+</head>
+<style>   
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color:darkred;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+header{
+        color: red;
+        text-align: center;
+        padding: 50px 20px;
+        margin: 0;
+        font-family: 'Courier', 'monospace';
+        font-size: 3em;
+        text-shadow:0 0 5px red, 0 0 10px darkred;
+        animation: remember 2.8s ease forwards;
+    }
+ nav a{
+        color: darkred;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 0 15px;
+        text-shadow: 0 0 5px red ;
+ }
+ nav a:hover{
+        color: white;
+ }
+ @keyframes remember {
+  0% {
+    opacity: 0;
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 0.8;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+</style>
+<body>
+    <header>I don't remember these...</header>
+    <nav>
+        <a href="Journal.html">Journal</a>
+        <a href="Escape.html">Escape</a>
+    </nav>
+
+</body>
+</html>
