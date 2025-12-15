@@ -73,8 +73,24 @@
         <a href="Photos.html">Photos</a>
         <a href="Escape.html">Escape</a>
     </nav>
-    <h1>How did you get here? You shouldn't be here.<br>I tried to leave but i couldn't.<br>I call this place home now...</h1>
+    <h1 id="randomText"></h1>
     <footer><h2>&copy;2025-trapped in web</h2></footer>
 
+    <script>
+        const texts = [
+          "How did you get here?",
+          "You weren't supposed to see this.",
+          "Every exit leads back.",
+          "I tried to leave once.",
+          "I remember you.",
+          "Still here?",
+          "Don't refresh. It won't help.",
+          "I SEE YOU.",
+          "You.Again"
+        ];
+      
+        const randomIndex = Math.floor(Math.random() * texts.length);
+        document.getElementById("randomText").textContent = texts[randomIndex];
+      </script>
 </body>
 </html>
