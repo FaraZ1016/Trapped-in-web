@@ -57,7 +57,9 @@ header{
   background: black;
 }
 .Photos img{
-  width: 50%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
   filter: grayscale(85%)contrast(1.1);
@@ -71,10 +73,10 @@ header{
   opacity: 1;
 }
 .photo figcaption{
-  opacity: 0;
   transition: opacity 0.4s ease;
   letter-spacing: 0.03em;
-  font-size: 1em;
+  font-size: 1.5em;
+  animation: flicker 0.75s infinite;
 }
 .photo figcaption:hover{
   opacity: 0.85;
@@ -87,7 +89,9 @@ header{
   background: black;
 }
 .girl img{
-  width: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
   aspect-ratio: 1/1;
   object-fit: cover;
   filter: grayscale(85%)contrast(1.1);
@@ -101,20 +105,23 @@ header{
   opacity: 1;
 }
 .Missing figcaption{
-opacity: 0;
+  animation: 0.75s infinite;
   transition: opacity 0.4s ease;
   letter-spacing: 0.03em;
-  font-size: 1em;
+  font-size: 1.5em;
+  animation: flicker 2s infinite;
 }
 .Missing figcaption:hover{
   opacity: 0.85;
 }
-@keyframes borderF{
-  0% {opacity: 0.3;}
-  40%{opacity: 0.6;}
-  60%{opacity: 0.25;}
-  100%{opacity: 0.4;}
+@keyframes flicker{
+        0%,19%,21%,23%,25%,54%,56%,100%
+          {opacity: 1;}
+        20%,24%,55% 
+        {opacity: 0.4;}
+
 }
+
 </style>
 <body>
     <header>I don't remember...</header>
